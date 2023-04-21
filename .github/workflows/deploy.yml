@@ -14,14 +14,3 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.15.0
-      
-      - name: Installing project dependencies
-      - run: npm install
-
-      - name: Building the project
-      - run: npm run build
-
-    - uses: actions/upload-artifact@v3
-      with:
-        name: vue-build
-        path: ./dist
