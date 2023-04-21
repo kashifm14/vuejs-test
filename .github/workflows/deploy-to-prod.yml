@@ -1,4 +1,4 @@
-name: Build and Deploy to Development the Vue JS project
+name: Build and Deploy to Production the Vue JS project
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
 jobs: 
   build-for-development:
     runs-on: ubuntu-latest
-    environment: development
+    environment: production
     steps:
       - uses: actions/checkout@master
 
@@ -31,5 +31,5 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: vue-build
+          name: vue-build-prod
           path: ./dist
