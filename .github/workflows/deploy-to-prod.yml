@@ -8,7 +8,7 @@ env:
   VITE_APP_TEST_ENV: ${{ vars.VITE_APP_TEST_ENV }}
 
 jobs: 
-  build-for-development:
+  build-for-production:
     runs-on: ubuntu-latest
     environment: production
     steps:
