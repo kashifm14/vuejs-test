@@ -8,8 +8,9 @@ env:
   VITE_APP_TEST_ENV: ${{ vars.VITE_APP_TEST_ENV }}
 
 jobs: 
-  build:
+  build-for-development:
     runs-on: ubuntu-latest
+    environment: development
     steps:
       - uses: actions/checkout@master
 
