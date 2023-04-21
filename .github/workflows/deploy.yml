@@ -20,7 +20,7 @@ jobs:
       - name: Print VITE_APP_TEST_ENV
         run: |
           echo VITE_APP_TEST_ENV directly from github = ${{ vars.VITE_APP_TEST_ENV }}
-          echo VITE_APP_TEST_ENV from environment of runner = "$VITE_APP_TEST_ENV"
+          echo VITE_APP_TEST_ENV from environment of runner = $VITE_APP_TEST_ENV
       
       - name: Installing project dependencies
         run: npm install
