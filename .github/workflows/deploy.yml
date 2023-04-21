@@ -16,7 +16,7 @@ jobs:
           node-version: 18.15.0
 
       - name: Print VITE_APP_TEST_ENV
-        run: echo $VITE_APP_TEST_ENV
+        run: echo "$VITE_APP_TEST_ENV"
       
       - name: Installing project dependencies
         run: npm install
